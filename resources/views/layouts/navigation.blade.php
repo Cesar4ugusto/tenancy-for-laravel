@@ -29,7 +29,7 @@
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('messages.auth.links.profile') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
@@ -39,7 +39,7 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('messages.auth.links.logout') }}
                             </x-dropdown-link>
                         </form>
                     </x-slot>

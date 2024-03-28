@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
@@ -8,7 +9,7 @@ require __DIR__.'/tenant.php';
 require __DIR__.'/auth.php';
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 Route::get('/dashboard', function () {
@@ -21,4 +22,4 @@ Route::middleware(['universal', 'auth', InitializeTenancyByDomain::class])->grou
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+Route::post('lang-switch', [LanguageController::class, 'update'])->middleware(['universal', 'auth', InitializeTenancyByDomain::class])->name('language.switch');
