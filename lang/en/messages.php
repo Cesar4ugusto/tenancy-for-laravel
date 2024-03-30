@@ -86,8 +86,86 @@ return [
         ],
     ],
     'sidebar' => [
-        'courses' => 'Courses',
-        'classes' => 'Classes',
-        'search' => 'Search',
+        'global_items' => [
+            'register' => 'Register',
+            'to_view' => 'To view',
+            'reports' => 'Reports',
+            'search' => 'Search',
+        ],
+        'courses' => [
+            'name' => 'Courses',
+            'items' => [
+                'curricular_structure' => 'Curricular Structure'
+            ],
+        ],
+        'classes' => [
+            'name'=> 'Classes',
+            'items' => [
+                'presence' => 'Presence',
+                'grades' => 'Grades',
+                'warnings' => 'Warnings',
+            ],
+        ],
+        'people' => [
+            'name' => 'People',
+            'items' => [
+                'coordinator' => [
+                    'name' => 'Coordinator',
+                    'items' => [
+                        'courses' => 'Courses',
+                    ],
+                ],
+                'students' => [
+                    'name' => 'Students',
+                    'items' => [
+                        'documents' => 'Documents',
+                        'historic' => 'Historic',
+                    ],
+                ],
+                'teachers' => [
+                    'name' => 'Teachers',
+                    'items' => [
+                        'classes' => 'Classes',
+                    ],
+                ],
+            ],
+        ],
+        'administrative' => [
+            'name' => 'Administrative',
+            'items' => [
+                'schedule' => 'Schedule',
+                'leads' => 'Leads',
+                'reports' => [
+                    'name' => 'Reports',
+                    'items' => [
+                        'courses' => 'Courses',
+                        'students' => 'Students',
+                        'teachers' => 'Teachers',
+                        'coordinators' => 'Coordinators',
+                        'classes' => 'Classes',
+                        'financial' => 'Financial',
+                    ],
+                ],
+                'announcements' => 'Announcements',
+                'documents' => [
+                    'name' => 'Documents',
+                    'items' => [
+                        'declaration' => 'Declaration',
+                        'historic' => 'Historic',
+                        'certificates' => 'Certificates',
+                    ],
+                ],
+            ],
+        ],
+        'financial' => [
+            'name' => 'Financial',
+            'items' => [
+                'bills' => 'Bills to receive',
+                'defaulters' => 'Defaulters',
+                'nfse' => 'NFSe issuance',
+                'bank_accounts' => 'Bank accounts',
+                'negotiation' => 'Negotiation',
+            ],
+        ],
     ],
 ];

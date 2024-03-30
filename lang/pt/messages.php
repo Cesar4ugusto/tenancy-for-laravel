@@ -86,8 +86,86 @@ return [
         ],
     ],
     'sidebar' => [
-        'courses' => 'Cursos',
-        'classes' => 'Turmas',
-        'search' => 'Pesquisar',
+        'global_items' => [
+            'register' => 'Registrar',
+            'to_view' => 'Visualizar',
+            'reports' => 'Relatórios',
+            'search' => 'Pesquisar',
+        ],
+        'courses' => [
+            'name' => 'Cursos',
+            'items' => [
+                'curricular_structure' => 'Estrutura Curricular'
+            ],
+        ],
+        'classes' => [
+            'name' => 'Turmas',
+            'items' => [
+                'presence' => 'Presença',
+                'grades' => 'Notas',
+                'warnings' => 'Avisos',
+            ],
+        ],
+        'people' => [
+            'name' => 'Pessoas',
+            'items' => [
+                'coordinator' => [
+                    'name' => 'Coordenador',
+                    'items' => [
+                        'courses' => 'Cursos',
+                    ],
+                ],
+                'students' => [
+                    'name' => 'Estudantes',
+                    'items' => [
+                        'documents' => 'Documentos',
+                        'historic' => 'Histórico',
+                    ],
+                ],
+                'teachers' => [
+                    'name' => 'Professores',
+                    'items' => [
+                        'classes' => 'Turmas',
+                    ],
+                ],
+            ],
+        ],
+        'administrative' => [
+            'name' => 'Administrativo',
+            'items' => [
+                'schedule' => 'Agenda',
+                'leads' => 'Leads',
+                'reports' => [
+                    'name' => 'Relatórios',
+                    'items' => [
+                        'courses' => 'Cursos',
+                        'students' => 'Estudantes',
+                        'teachers' => 'Professores',
+                        'coordinators' => 'Coordenadores',
+                        'classes' => 'Turmas',
+                        'financial' => 'Financeiro',
+                    ],
+                ],
+                'announcements' => 'Anúncios',
+                'documents' => [
+                    'name' => 'Documentos',
+                    'items' => [
+                        'declaration' => 'Declaração',
+                        'historic' => 'Histórico',
+                        'certificates' => 'Certificados',
+                    ],
+                ],
+            ],
+        ],
+        'financial' => [
+            'name' => 'Financeiro',
+            'items' => [
+                'bills' => 'Contas a receber',
+                'defaulters' => 'Inadimplentes',
+                'nfse' => 'Emissão de NFSe',
+                'bank_accounts' => 'Contas bancárias',
+                'negotiation' => 'Negociação',
+            ],
+        ],
     ],
 ];
