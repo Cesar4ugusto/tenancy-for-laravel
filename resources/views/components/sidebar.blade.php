@@ -6,7 +6,7 @@
 
         <ul class="mt-6 space-y-1">
             <li>
-                <x-dropdown-link-sidebar>
+                <x-dropdown-link-sidebar type='group'>
                     <x-slot name="menu">
                         <svg class="size-4" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -25,7 +25,7 @@
             </li>
 
             <li>
-                <x-dropdown-link-sidebar>
+                <x-dropdown-link-sidebar type='group'>
                     <x-slot name="menu">
                         <svg class="size-4" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -49,7 +49,7 @@
                 </x-dropdown-link-sidebar>
             </li>
             <li>
-                <x-dropdown-link-sidebar>
+                <x-dropdown-link-sidebar type='group'>
                     <x-slot name="menu">
                         <svg class="size-4" viewBox="0 0 44 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -60,7 +60,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-dropdown-link-sub-menu-sidebar>
+                        <x-dropdown-link-sidebar type='subgroup'>
                             <x-slot name="menu">
                                 <span class="text-sm font-medium">{{ __('messages.sidebar.people.items.coordinator.name') }}</span>
                             </x-slot>
@@ -70,9 +70,9 @@
                                     {{ __('messages.sidebar.people.items.coordinator.items.courses') }}
                                 </x-nav-link-dropdown-sidebar>
                             </x-slot>
-                        </x-dropdown-link-sub-menu-sidebar>
+                        </x-dropdown-link-sidebar>
 
-                        <x-dropdown-link-sub-menu-sidebar>
+                        <x-dropdown-link-sidebar type='subgroup'>
                             <x-slot name="menu">
                                 <span class="text-sm font-medium">{{ __('messages.sidebar.people.items.students.name') }}</span>
                             </x-slot>
@@ -85,9 +85,9 @@
                                     {{ __('messages.sidebar.people.items.students.items.historic') }}
                                 </x-nav-link-dropdown-sidebar>
                             </x-slot>
-                        </x-dropdown-link-sub-menu-sidebar>
+                        </x-dropdown-link-sidebar>
 
-                        <x-dropdown-link-sub-menu-sidebar>
+                        <x-dropdown-link-sidebar type='subgroup'>
                             <x-slot name="menu">
                                 <span class="text-sm font-medium">{{ __('messages.sidebar.people.items.teachers.name') }}</span>
                             </x-slot>
@@ -97,13 +97,13 @@
                                     {{ __('messages.sidebar.people.items.teachers.items.classes') }}
                                 </x-nav-link-dropdown-sidebar>
                             </x-slot>
-                        </x-dropdown-link-sub-menu-sidebar>
+                        </x-dropdown-link-sidebar>
                     </x-slot>
                 </x-dropdown-link-sidebar>
             </li>
 
             <li>
-                <x-dropdown-link-sidebar>
+                <x-dropdown-link-sidebar type='group'>
                     <x-slot name="menu">
                         <svg class="size-4" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -122,7 +122,7 @@
                             {{ __('messages.sidebar.administrative.items.leads') }}
                         </x-nav-link-dropdown-sidebar>
 
-                        <x-dropdown-link-sub-menu-sidebar>
+                        <x-dropdown-link-sidebar type='subgroup'>
                             <x-slot name="menu">
                                 <span class="text-sm font-medium">{{ __('messages.sidebar.administrative.items.reports.name') }}</span>
                             </x-slot>
@@ -147,13 +147,13 @@
                                     {{ __('messages.sidebar.administrative.items.reports.items.teachers') }}
                                 </x-nav-link-dropdown-sidebar>
                             </x-slot>
-                        </x-dropdown-link-sub-menu-sidebar>
+                        </x-dropdown-link-sidebar>
 
                         <x-nav-link-dropdown-sidebar>
                             {{ __('messages.sidebar.administrative.items.announcements') }}
                         </x-nav-link-dropdown-sidebar>
 
-                        <x-dropdown-link-sub-menu-sidebar>
+                        <x-dropdown-link-sidebar type='subgroup'>
                             <x-slot name="menu">
                                 <span class="text-sm font-medium">{{ __('messages.sidebar.administrative.items.documents.name') }}</span>
                             </x-slot>
@@ -169,13 +169,13 @@
                                     {{ __('messages.sidebar.administrative.items.documents.items.historic') }}
                                 </x-nav-link-dropdown-sidebar>
                             </x-slot>
-                        </x-dropdown-link-sub-menu-sidebar>
+                        </x-dropdown-link-sidebar>
                     </x-slot>
                 </x-dropdown-link-sidebar>
             </li>
 
             <li>
-                <x-dropdown-link-sidebar>
+                <x-dropdown-link-sidebar type='group'>
                     <x-slot name="menu">
                         <svg class="size-4" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

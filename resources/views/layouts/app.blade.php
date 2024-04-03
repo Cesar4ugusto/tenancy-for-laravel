@@ -21,7 +21,7 @@
                 <x-sidebar />
                 <div class="w-full h-screen overflow-y-auto overflow-x-hidden">
                     @include('layouts.navigation')
-                    <main class="px-2 md:px-3">
+                    <main class="px-4 md:px-6">
                         {{ $slot }}
                     </main>
                 </div>
